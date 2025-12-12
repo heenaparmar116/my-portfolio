@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heena Parmar — Senior Business Intelligence Engineer</title>
+  <meta name="description" content="Senior BI Engineer specializing in Spotfire, Power BI, SQL, ETL optimization, automation, and executive dashboards.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#071126; --card:#0b1220; --text:#e6eef8; --muted:#9fb0c6; --accent:#7dd3fc;
+      font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:linear-gradient(180deg,#071126 0%, #0f1724 100%);color:var(--text);}
+    .container{max-width:1100px;margin:auto;padding:24px;}
+
+    /* Header */
+    .site-header{position:sticky;top:0;background:rgba(6,10,17,0.75);backdrop-filter:blur(6px);z-index:50;}
+    .header-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0;}
+    .brand{font-size:20px;font-weight:700;color:var(--text);text-decoration:none;}
+    .nav{display:flex;gap:18px;align-items:center;}
+    .nav a{color:var(--muted);text-decoration:none;}
+    .nav a:hover{color:var(--accent);}
+    .btn-outline{padding:8px 12px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);}
+    .nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:24px;}
+
+    /* Hero */
+    .hero{display:flex;gap:32px;padding:40px 0;align-items:center;flex-wrap:wrap;}
+    .hero-left{flex:1;min-width:260px;}
+    .hero-right{width:200px;text-align:center;}
+    .profile{width:180px;height:180px;border-radius:50%;border:3px solid rgba(255,255,255,0.08);object-fit:cover;}
+
+    h1{font-size:36px;margin:0;}
+    .lead{margin-top:8px;color:var(--muted);font-size:17px;line-height:1.6;}
+    .accent{color:var(--accent);}
+    .btn-primary{background:linear-gradient(90deg,#22d3ee,#60a5fa);color:#041028;text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:700;margin-right:8px;display:inline-block;}
+
+    /* Sections */
+    .section{padding:40px 0;}
+    h2{font-size:26px;margin-bottom:12px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;}
+    .card{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);}
+    .card h3{margin-top:0;margin-bottom:8px;}
+
+    .list{padding-left:20px;color:var(--muted);}
+    .meta{color:var(--muted);font-size:14px;margin-top:12px;}
+
+    /* Footer */
+    .site-footer{padding:16px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.06);margin-top:40px;}
+
+    /* Mobile */
+    @media (max-width:800px){
+      .nav{display:none;}
+      .nav.open{display:flex;flex-direction:column;position:absolute;right:20px;top:60px;background:#0b1220;border-radius:8px;padding:12px;}
+      .nav-toggle{display:block;}
+      h1{font-size:30px;}
+    }
+  </style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#">Heena Parmar</a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="btn-outline" href="assets/resume.pdf" target="_blank">Resume</a>
+    </nav>
+    <button id="navToggle" class="nav-toggle">☰</button>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <div class="hero-left">
+    <h1>Senior BI Engineer — <span class="accent">Spotfire Certified</span></h1>
+    <p class="lead">
+      Business Intelligence & Data Visualization Specialist with <b>9 years of experience</b> in  
+      Spotfire, Power BI, SQL, ETL workflows, automation, and delivering <b>C-suite dashboards</b> that drive decisions.
+    </p>
+    <div style="margin-top:16px;">
+      <a class="btn-primary" href="#projects">View Projects</a>
+      <a class="btn-outline" href="assets/resume.pdf" target="_blank">Download Resume</a>
+    </div>
+    <p class="meta">Houston, Texas • <a href="mailto:heenaparmar116@gmail.com" style="color:var(--accent)">heenaparmar116@gmail.com</a> • +1 (713) 909-9712 <br>
+      <a href="https://www.linkedin.com" target="_blank" style="color:var(--accent)">LinkedIn</a>
+    </p>
+  </div>
+
+  <div class="hero-right">
+    <img src="assets/profile.PNG" alt="Heena Parmar" class="profile">
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    BI Specialist with proven experience designing executive dashboards, optimizing ETL workflows, 
+    performing exploratory analysis, and partnering with leadership to deliver insights that support 
+    revenue, operations, and strategic programs.
+  </p>
+  <ul class="list">
+    <li><strong>Data Visualization:</strong> Spotfire (TCA, TCP), Power BI, Tableau</li>
+    <li><strong>ETL / Data:</strong> SQL, Power Query, Oracle, Salesforce Integration</li>
+    <li><strong>Automation:</strong> IronPython, VBA, JavaScript</li>
+  </ul>
+</section>
+
+<section id="achievements" class="section">
+  <h2>Key Achievements</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Post-Merger Insights</h3>
+      <p>Created executive-level dashboards supporting <b>$1B+ revenue</b> decisions at TIBCO/Citrix.</p>
+    </div>
+    <div class="card">
+      <h3>ETL Optimization</h3>
+      <p>Reduced processing time by <b>30%</b> via SQL + Power Query optimization.</p>
+    </div>
+    <div class="card">
+      <h3>Automation Impact</h3>
+      <p>Cut manual effort by <b>40%</b> by automating financial & operational reporting.</p>
+    </div>
+    <div class="card">
+      <h3>Fraud Detection</h3>
+      <p>Identified a fraudulent pattern, preserving a <b>$4M</b> contract through forensic analysis.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Highlighted Work</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>C-Suite KPI Dashboards</h3>
+      <p>Developed Power BI & Spotfire dashboards used by CEO/SVP levels for renewal, revenue, and operational KPIs.</p>
+      <p class="meta">Tools: Spotfire, Power BI, SQL</p>
+    </div>
+
+    <div class="card">
+      <h3>Salesforce + Spotfire Integration</h3>
+      <p>Integrated Salesforce objects and reports into enterprise dashboards for <b>500+ global users</b>.</p>
+      <p class="meta">Tools: Salesforce, SQL, Spotfire</p>
+    </div>
+
+    <div class="card">
+      <h3>ETL & Workflow Automation</h3>
+      <p>Automated multi-team workflows using Power Query, IronPython & SQL — improving efficiency by 20–40%.</p>
+      <p class="meta">Tools: SQL, Power Query, Python</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>
+    Feel free to reach out for BI/Analytics roles, dashboard consulting, or collaboration.
+  </p>
+  <p class="meta">
+    📧 <a href="mailto:heenaparmar116@gmail.com" style="color:var(--accent)">heenaparmar116@gmail.com</a><br>
+    🌎 Houston, Texas<br>
+    🔗 <a href="https://www.linkedin.com" target="_blank" style="color:var(--accent)">LinkedIn</a>
+  </p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  © 2025 Heena Parmar — Business Intelligence & Data Visualization
+</footer>
+
+<script>
+  document.getElementById("navToggle").onclick = () => {
+    document.getElementById("nav").classList.toggle("open");
+  };
+</script>
+
+</body>
+</html>
