@@ -1,220 +1,729 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Heena Parmar — Senior Business Intelligence Engineer</title>
-  <meta name="description" content="Senior BI Engineer specializing in Spotfire, Power BI, SQL, ETL optimization, automation, and executive dashboards.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <title>Heena Parmar | Senior Business Intelligence & Analytics Engineer</title>
+
+<meta name="description"
+     content="Senior Business Intelligence & Analytics Engineer with 9+ years of experience in Power BI, Spotfire, Python, SQL, Data Warehousing, Executive Analytics, Advance Excel and KPI Governance." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --bg:#071126; --card:#0b1220; --text:#e6eef8; --muted:#9fb0c6; --accent:#7dd3fc;
-      font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    :root{
+      --bg:#071126;
+      --card:#0b1220;
+      --text:#e6eef8;
+      --muted:#9fb0c6;
+      --accent:#7dd3fc;
+      --border:rgba(255,255,255,.06);
+      font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial;
     }
+
     *{box-sizing:border-box;}
-    body{margin:0;background:linear-gradient(180deg,#071126 0%, #0f1724 100%);color:var(--text);}
-    .container{max-width:1100px;margin:auto;padding:24px;}
 
-    /* Header */
-    .site-header{position:sticky;top:0;background:rgba(6,10,17,0.75);backdrop-filter:blur(6px);z-index:50;}
-    .header-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0;}
-    .brand{font-size:20px;font-weight:700;color:var(--text);text-decoration:none;}
-    .nav{display:flex;gap:18px;align-items:center;}
-    .nav a{color:var(--muted);text-decoration:none;}
-    .nav a:hover{color:var(--accent);}
-    .btn-outline{padding:8px 12px;border:1px solid var(--accent);border-radius:8px;color:var(--accent);}
-    .nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:24px;}
+    html{
+      scroll-behavior:smooth;
+    }
 
-    /* Hero */
-    .hero{display:flex;gap:32px;padding:40px 0;align-items:center;flex-wrap:wrap;}
-    .hero-left{flex:1;min-width:260px;}
-    .hero-right{width:200px;text-align:center;}
-    .profile{width:180px;height:180px;border-radius:50%;border:3px solid rgba(255,255,255,0.08);object-fit:cover;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#071126 0%,#0f1724 100%);
+      color:var(--text);
+      line-height:1.6;
+    }
 
-    h1{font-size:36px;margin:0;}
-    .lead{margin-top:8px;color:var(--muted);font-size:17px;line-height:1.6;}
-    .accent{color:var(--accent);}
-    .btn-primary{background:linear-gradient(90deg,#22d3ee,#60a5fa);color:#041028;text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:700;margin-right:8px;display:inline-block;}
+    .container{
+      max-width:1150px;
+      margin:auto;
+      padding:24px;
+    }
 
-    /* Sections */
-    .section{padding:40px 0;}
-    h2{font-size:26px;margin-bottom:12px;}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;}
-    .card{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);}
-    .card h3{margin-top:0;margin-bottom:8px;}
+    .site-header{
+      position:sticky;
+      top:0;
+      background:rgba(6,10,17,.85);
+      backdrop-filter:blur(10px);
+      z-index:999;
+      border-bottom:1px solid var(--border);
+    }
 
-    .list{padding-left:20px;color:var(--muted);}
-    .meta{color:var(--muted);font-size:14px;margin-top:12px;}
+    .header-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 0;
+    }
 
-    /* Footer */
-    .site-footer{padding:16px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.06);margin-top:40px;}
+    .brand{
+      color:var(--text);
+      text-decoration:none;
+      font-size:20px;
+      font-weight:800;
+    }
 
-    /* Mobile */
-    @media (max-width:800px){
-      .nav{display:none;}
-      .nav.open{display:flex;flex-direction:column;position:absolute;right:20px;top:60px;background:#0b1220;border-radius:8px;padding:12px;}
-      .nav-toggle{display:block;}
-      h1{font-size:30px;}
+    .nav{
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+
+    .nav a{
+      color:var(--muted);
+      text-decoration:none;
+      transition:.2s;
+    }
+
+    .nav a:hover{
+      color:var(--accent);
+    }
+
+    .btn-outline{
+      padding:10px 14px;
+      border:1px solid var(--accent);
+      border-radius:8px;
+      color:var(--accent) !important;
+    }
+
+    .btn-primary{
+      background:linear-gradient(90deg,#22d3ee,#60a5fa);
+      color:#041028;
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:10px;
+      font-weight:700;
+      display:inline-block;
+      margin-right:10px;
+    }
+
+    .nav-toggle{
+      display:none;
+      background:none;
+      border:0;
+      color:white;
+      font-size:24px;
+    }
+
+    .hero{
+      display:flex;
+      align-items:center;
+      gap:40px;
+      padding:70px 0 40px;
+      flex-wrap:wrap;
+    }
+
+    .hero-left{
+      flex:1;
+      min-width:320px;
+    }
+
+    .hero-right{
+      width:260px;
+      text-align:center;
+    }
+
+    .profile{
+      width:240px;
+      height:240px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid rgba(255,255,255,.08);
+    }
+
+    h1{
+      font-size:48px;
+      line-height:1.2;
+      margin-bottom:16px;
+    }
+
+    h2{
+      font-size:30px;
+      margin-bottom:18px;
+    }
+
+    .lead{
+      color:var(--muted);
+      font-size:18px;
+      max-width:750px;
+    }
+
+    .section{
+      padding:60px 0;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+    }
+
+    .card{
+      background:var(--card);
+      padding:22px;
+      border-radius:14px;
+      border:1px solid var(--border);
+    }
+
+    .card h3{
+      margin-top:0;
+    }
+
+    .kpi{
+      text-align:center;
+    }
+
+    .kpi h3{
+      font-size:34px;
+      color:var(--accent);
+      margin-bottom:5px;
+    }
+
+    .meta{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .list{
+      color:var(--muted);
+      padding-left:20px;
+    }
+
+    @media(max-width:800px){
+
+      .nav{
+        display:none;
+      }
+
+      .nav.open{
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        right:20px;
+        top:65px;
+        background:#0b1220;
+        padding:16px;
+        border-radius:10px;
+      }
+
+      .nav-toggle{
+        display:block;
+      }
+
+      h1{
+        font-size:34px;
+      }
+
+      .hero{
+        text-align:center;
+      }
     }
   </style>
 
 </head>
+
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="#">Heena Parmar</a>
-    <nav class="nav" id="nav">
-      <a href="#about">About</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
-      <a class="btn-outline" href="assets/resume.pdf" target="_blank">Resume</a>
-    </nav>
-    <button id="navToggle" class="nav-toggle">☰</button>
+
+
+<a class="brand" href="#">
+  Heena Parmar
+</a>
+
+<nav class="nav" id="nav">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#projects">Projects</a>
+  <a href="#awards">Awards</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#contact">Contact</a>
+  <a class="btn-outline" href="assets/resume.pdf" target="_blank">Resume</a>
+</nav>
+
+<button id="navToggle" class="nav-toggle">☰</button>
+
+
   </div>
 </header>
 
 <main class="container">
 
 <section class="hero">
+
   <div class="hero-left">
-    <h1>Senior BI Engineer — <span class="accent">Spotfire Certified</span></h1>
-    <p class="lead">
-      Business Intelligence & Data Visualization Specialist with <b>9 years of experience</b> in  
-      Spotfire, Power BI, SQL, ETL workflows, automation, and delivering <b>C-suite dashboards</b> that drive decisions.
-    </p>
-    <div style="margin-top:16px;">
-      <a class="btn-primary" href="#projects">View Projects</a>
-      <a class="btn-outline" href="assets/resume.pdf" target="_blank">Download Resume</a>
-    </div>
-    <p class="meta">Houston, Texas • <a href="mailto:heenaparmar116@gmail.com" style="color:var(--accent)">heenaparmar116@gmail.com</a> • +1 (713) 909-9712 <br>
-      <a href="https://www.linkedin.com" target="_blank" style="color:var(--accent)">LinkedIn</a>
-    </p>
+
+
+
+<h1>
+  Senior Business Intelligence & Analytics Engineer
+</h1>
+
+<p class="lead">
+  9+ years of experience designing enterprise analytics platforms,
+  executive dashboards, and cloud-based data solutions.
+
+  Specialized in Power BI, Azure, Databricks, SQL,
+  Data Warehousing, KPI Governance, Revenue Analytics,
+  and Executive Reporting.
+
+  <br><br>
+
+  Delivered analytics solutions supporting
+  <strong>$1B+ strategic decisions</strong>,
+  recovered <strong>$20M+ in revenue</strong>,
+  and enabled data-driven decision-making across
+  Finance, Sales, Marketing, and Executive Leadership teams.
+</p>
+
+<div style="margin-top:20px;">
+  <a class="btn-primary" href="#projects">View Projects</a>
+  <a class="btn-outline" href="assets/resume.pdf" target="_blank">Download Resume</a>
+</div>
+
+<p class="meta" style="margin-top:20px;">
+  Houston, Texas<br>
+  📧 heenaparmar116@gmail.com<br>
+  📱 +1 (713) 909-9712<br>
+  🔗 <a href="https://www.linkedin.com/in/heena-parmar-90447880/"
+        target="_blank"
+        style="color:var(--accent);">
+        LinkedIn Profile
+     </a>
+</p>
+
+
+
+
   </div>
 
   <div class="hero-right">
-    <img src="assets/profile.PNG" alt="Heena Parmar" class="profile">
+    <img src="assets/profile.PNG"
+         alt="Heena Parmar"
+         class="profile">
   </div>
+
 </section>
 
+<section>
+
+  <div class="grid">
+
+
+
+<div class="card kpi">
+  <h3>9+</h3>
+  <p>Years Experience</p>
+</div>
+
+<div class="card kpi">
+  <h3>$20M+</h3>
+  <p>Revenue Recovered</p>
+</div>
+
+<div class="card kpi">
+  <h3>$1B+</h3>
+  <p>Business Decisions Supported</p>
+</div>
+
+<div class="card kpi">
+  <h3>500+</h3>
+  <p>Global Users Supported</p>
+</div>
+
+
+
+<div class="card kpi">
+  <h3>2</h3>
+  <p>Corporate Excellence Awards</p>
+</div>
+
+
+
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
 <section id="about" class="section">
+
   <h2>About Me</h2>
-  <p>
-    BI Specialist with proven experience designing executive dashboards, optimizing ETL workflows, 
-    performing exploratory analysis, and partnering with leadership to deliver insights that support 
-    revenue, operations, and strategic programs.
+
+  <p class="lead">
+    I am a Senior Business Intelligence and Analytics Engineer with more than
+    nine years of experience transforming enterprise data into strategic business
+    insights.
+
+
+My expertise spans Power BI, Azure, Databricks, SQL, Data Warehousing,
+Executive Reporting, KPI Governance, Revenue Analytics, and Finance Analytics.
+
+I have partnered with C-level executives to design analytics platforms that
+support revenue planning, profitability analysis, forecasting, customer
+analytics, and operational performance management.
+
+Throughout my career, I have delivered enterprise-scale solutions that
+influenced more than $1 billion in strategic decisions and helped recover
+over $20 million in revenue.
+
+
   </p>
+
   <ul class="list">
-    <li><strong>Data Visualization:</strong> Spotfire (TCA, TCP), Power BI, Tableau</li>
-    <li><strong>ETL / Data:</strong> SQL, Power Query, Oracle, Salesforce Integration</li>
-    <li><strong>Automation:</strong> IronPython, VBA, JavaScript</li>
+    <li><strong>Business Intelligence:</strong> Power BI, Spotfire, Tableau, Executive Reporting</li>
+    <li><strong>Data Engineering:</strong> SQL, Data Warehousing, ETL, ELT, Data Modeling</li>
+    <li><strong>Cloud Analytics:</strong> Azure, Databricks, Medallion Architecture</li>
+    <li><strong>Programming:</strong> Python, DAX, VBA, Power Query</li>
+    <li><strong>Business Analytics:</strong> KPI Governance, Revenue Analytics, Finance Analytics</li>
   </ul>
+
+</section>
+
+<section id="experience" class="section">
+
+  <h2>Professional Experience</h2>
+
+  <div class="grid">
+
+
+<div class="card">
+  <h3>Senior Business Specialist</h3>
+  <p><strong>HCLTech</strong> | Sep 2023 – May 2025</p>
+
+  <ul class="list">
+    <li>Partnered with executive leadership on KPI governance and strategic reporting.</li>
+    <li>Built Power BI dashboards supporting Finance, Sales, and Marketing teams.</li>
+    <li>Optimized ETL workflows reducing processing time by 30%.</li>
+    <li>Designed cloud analytics architecture using Azure and Databricks concepts.</li>
+    <li>Mentored analysts and engineers across BI initiatives.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Senior Business Intelligence Engineer</h3>
+  <p><strong>TIBCO Software (Cloud Software Group)</strong> | Jun 2020 – Aug 2023</p>
+
+  <ul class="list">
+    <li>Developed executive dashboards supporting customer success and renewal analytics.</li>
+    <li>Automated quarterly reporting for Vista Equity Partners.</li>
+    <li>Integrated Salesforce and enterprise data platforms for 500+ global users.</li>
+    <li>Delivered CEO-level insights following the TIBCO-Citrix merger.</li>
+    <li>Supported analytics influencing over $1B in revenue decisions.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Process Leader / Analyst - Business Planning & MI</h3>
+  <p><strong>Ventura (CAPITA)</strong> | Jun 2019 – May 2020</p>
+
+  <ul class="list">
+    <li>Served as liaison between UK operations and business planning teams.</li>
+    <li>Identified fraudulent activity through forensic data analysis.</li>
+    <li>Protected a $4M client contract through investigative reporting.</li>
+    <li>Automated multiple reporting processes using VBA and Power BI.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>System Data Specialist</h3>
+  <p><strong>Vodafone</strong> | Oct 2016 – May 2019</p>
+
+  <ul class="list">
+    <li>Led enterprise data reconciliation initiatives.</li>
+    <li>Recovered over $20M in lost revenue.</li>
+    <li>Developed automated reporting solutions using Excel, Power Query, and VBA.</li>
+    <li>Improved enterprise data quality through XML validation and gap analysis.</li>
+  </ul>
+</div>
+
+
+  </div>
+
 </section>
 
 <section id="achievements" class="section">
+
   <h2>Key Achievements</h2>
+
   <div class="grid">
-    <div class="card">
-      <h3>Post-Merger Insights</h3>
-      <p>Created executive-level dashboards supporting <b>$1B+ revenue</b> decisions at TIBCO/Citrix.</p>
-    </div>
-    <div class="card">
-      <h3>ETL Optimization</h3>
-      <p>Reduced processing time by <b>30%</b> via SQL + Power Query optimization.</p>
-    </div>
-    <div class="card">
-      <h3>Automation Impact</h3>
-      <p>Cut manual effort by <b>40%</b> by automating financial & operational reporting.</p>
-    </div>
-    <div class="card">
-      <h3>Fraud Detection</h3>
-      <p>Identified a fraudulent pattern, preserving a <b>$4M</b> contract through forensic analysis.</p>
-    </div>
+
+
+<div class="card">
+  <h3>$1B+ Strategic Decisions</h3>
+  <p>
+    Delivered executive dashboards and analytics platforms supporting
+    strategic revenue and business decisions.
+  </p>
+</div>
+
+<div class="card">
+  <h3>$20M+ Revenue Recovery</h3>
+  <p>
+    Identified enterprise data discrepancies and reconciliation gaps,
+    resulting in recovery of over $20M in revenue.
+  </p>
+</div>
+
+<div class="card">
+  <h3>500+ Global Users</h3>
+  <p>
+    Developed and maintained analytics solutions used by more than
+    500 global stakeholders.
+  </p>
+</div>
+
+<div class="card">
+  <h3>$4M Contract Protection</h3>
+  <p>
+    Uncovered fraudulent activity through advanced analysis,
+    preserving a major client engagement.
+  </p>
+</div>
+
+
   </div>
+
 </section>
 
 <section id="projects" class="section">
-  <h2>Highlighted Work</h2>
+
+  <h2>Featured Projects</h2>
+
   <div class="grid">
 
-    <div class="card">
-      <h3>C-Suite KPI Dashboards</h3>
-      <p>Developed Power BI & Spotfire dashboards used by CEO/SVP levels for renewal, revenue, and operational KPIs.</p>
-      <p class="meta">Tools: Spotfire, Power BI, SQL</p>
-    </div>
 
-    <div class="card">
-      <h3>Salesforce + Spotfire Integration</h3>
-      <p>Integrated Salesforce objects and reports into enterprise dashboards for <b>500+ global users</b>.</p>
-      <p class="meta">Tools: Salesforce, SQL, Spotfire</p>
-    </div>
+<div class="card">
+  <h3>Executive Revenue Analytics Platform</h3>
 
-    <div class="card">
-      <h3>ETL & Workflow Automation</h3>
-      <p>Automated multi-team workflows using Power Query, IronPython & SQL — improving efficiency by 20–40%.</p>
-      <p class="meta">Tools: SQL, Power Query, Python</p>
-    </div>
+  <p>
+    Designed executive Power BI dashboards tracking ARR,
+    revenue forecasts, profitability, customer retention,
+    and executive scorecards.
+  </p>
+
+  <p class="meta">
+    Power BI • SQL • Azure
+  </p>
+</div>
+
+<div class="card">
+  <h3>Finance Data Warehouse Modernization</h3>
+
+  <p>
+    Implemented scalable data architecture and analytics
+    solutions supporting Finance and Sales organizations.
+  </p>
+
+  <p class="meta">
+    Azure • Databricks • SQL
+  </p>
+</div>
+
+<div class="card">
+  <h3>Revenue Recovery Initiative</h3>
+
+  <p>
+    Conducted enterprise reconciliation and anomaly detection,
+    leading to recovery of more than $20M in revenue.
+  </p>
+
+  <p class="meta">
+    SQL • Analytics • Data Quality
+  </p>
+</div>
+
 
   </div>
+
 </section>
 
-<section id="certificates" class="section">
-  <h2>Certificates</h2>
-  <p class="meta">Spotfire, ITIL, BI, and analytics certifications.</p>
+
+
+<section id="awards" class="section">
+
+  <h2>Awards & Recognition</h2>
 
   <div class="grid">
 
-    <!-- Certificate Card 1 -->
     <div class="card">
-      <h3>TCA_Spotfire_Associate</h3>
-      <p>Advanced certification demonstrating mastery of enterprise-level Spotfire deployments.</p>
-      <a href="assets/certificates/TCA_Spotfire_Associate.pdf" target="_blank" style="color:var(--accent);">View Certificate</a>
-    </div>
+  <h3>World Class Operations Award</h3>
 
-    <!-- Certificate Card 2 -->
-    <div class="card">
-      <h3>TCP_Spotfire_Professional</h3>
-      <p>Professional-level Spotfire visualization, automation, and analytics certification.</p>
-      <a href="assets/certificates/TCP_Spotfire_Professional.pdf" target="_blank" style="color:var(--accent);">View Certificate</a>
-    </div>
+  <p>
+    Recognized by Cloud Software Group for outstanding contributions
+    to business intelligence, executive reporting, and operational excellence.
+  </p>
 
-    <!-- Certificate Card 3 -->
-    <div class="card">
-      <h3>TCA_Data_Science</h3>
-      <p>IT Service Management certification covering workflow, operations, and process excellence.</p>
-      <a href="assets/certificates/TCA_Data_Science.pdf" target="_blank" style="color:var(--accent);">View Certificate</a>
-    </div>
+  <a href="assets/awards/World_Class_Operations_Award.png"
+     target="_blank"
+     style="color:var(--accent);">
+     View Award
+  </a>
+</div>
 
-   
-    
+    <<div class="card">
+  <h3>HCL ERS Champion Award</h3>
+
+  <p>
+    Recognized by HCLTech for exceptional performance, SME support,
+    and enterprise analytics leadership.
+  </p>
+
+  <a href="assets/awards/HCLTech_Award.pdf"
+     target="_blank"
+     style="color:var(--accent);">
+     View Award
+  </a>
+</div>
+
   </div>
+
+</section>
+
+
+
+<section id="certificates" class="section">
+
+  <h2>Certifications</h2>
+
+  <p class="meta">
+    Professional certifications demonstrating expertise in Business Intelligence,
+    Analytics, Data Science, and Enterprise Reporting.
+  </p>
+
+  <div class="grid">
+
+
+<div class="card">
+  <h3>TIBCO Spotfire Associate (TCA)</h3>
+
+  <p>
+    Certified Associate credential demonstrating expertise in Spotfire
+    analytics, visualization, and enterprise reporting.
+  </p>
+
+  <a href="assets/certificates/TCA_Spotfire_Associate.pdf"
+     target="_blank"
+     style="color:var(--accent);">
+     View Certificate
+  </a>
+</div>
+
+<div class="card">
+  <h3>TIBCO Spotfire Professional (TCP)</h3>
+
+  <p>
+    Professional-level certification covering advanced dashboard
+    development, analytics workflows, and automation.
+  </p>
+
+  <a href="assets/certificates/TCP_Spotfire_Professional.pdf"
+     target="_blank"
+     style="color:var(--accent);">
+     View Certificate
+  </a>
+</div>
+
+<div class="card">
+  <h3>TIBCO Data Science (TCA)</h3>
+
+  <p>
+    Data Science certification focused on predictive analytics,
+    advanced data analysis, and business intelligence solutions.
+  </p>
+
+  <a href="assets/certificates/TCA_Data_Science.pdf"
+     target="_blank"
+     style="color:var(--accent);">
+     View Certificate
+  </a>
+</div>
+
+
+  </div>
+
 </section>
 
 <section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>
-    Feel free to reach out for BI/Analytics roles, dashboard consulting, or collaboration.
-  </p>
-  <p class="meta">
-    📧 <a href="mailto:heenaparmar116@gmail.com" style="color:var(--accent)">heenaparmar116@gmail.com</a><br>
-    🌎 Houston, Texas<br>
-    🔗 <a href="https://www.linkedin.com" target="_blank" style="color:var(--accent)">LinkedIn</a>
-  </p>
+
+  <h2>Let's Connect</h2>
+
+  <div class="card">
+
+
+<p>
+  I am open to opportunities in Business Intelligence, Analytics Engineering,
+  Data Visualization, Executive Reporting, and Data Platform Strategy.
+</p>
+
+<p class="meta">
+
+  📧
+  <a href="mailto:heenaparmar116@gmail.com"
+     style="color:var(--accent);">
+     heenaparmar116@gmail.com
+  </a>
+
+  <br><br>
+
+  📱 +1 (713) 909-9712
+
+  <br><br>
+
+  📍 Houston, Texas
+
+  <br><br>
+
+  🔗
+  <a href="https://www.linkedin.com/in/heena-parmar-90447880/"
+     target="_blank"
+     style="color:var(--accent);">
+     LinkedIn Profile
+  </a>
+
+</p>
+
+
+  </div>
+
 </section>
 
 </main>
 
 <footer class="site-footer">
-  © 2025 Heena Parmar — Business Intelligence & Data Visualization
+
+  <div class="container">
+
+```
+<p>
+  © 2026 Heena Parmar
+</p>
+
+<p class="meta">
+  Senior Business Intelligence & Analytics Engineer
+</p>
+
+
+  </div>
+
 </footer>
 
 <script>
+
   document.getElementById("navToggle").onclick = () => {
     document.getElementById("nav").classList.toggle("open");
   };
+
 </script>
 
 </body>
